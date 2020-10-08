@@ -7,13 +7,13 @@ char *mx_strcpy(char *dst, const char *src) {
         return NULL;
 
     for(i = 0; src[i] != '\0'; i++)
-		dst[i] = src[i];
-	dst[i] = '\0';
-	return dst;
+        dst[i] = src[i];
+    dst[i] = '\0';
+    return dst;
 }
 
 // int main (void) {
-// 	char *src = "45678hhgf 567u fg tyh";
+// 	char *src = NULL;
 // 	char dst[1000];
 // //	printf ("%s", *mx_strcpy(*dst, *src));
 // 	mx_strcpy(dst, src);
