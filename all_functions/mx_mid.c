@@ -2,10 +2,14 @@
 
 int mx_mid(int a, int b, int c) {
 	int mid;
-	if ((a >= b && a <= c) || (a <= b && a >= c)) mid = a;
-	else if ((b >= c && b <= a) || (b <= c && b >= a)) mid = b;
-	else if ((c >= b && c <= a) || (c <= b && c >= a)) mid = c;
-	else mid = 0;
+	if ((a >= b && a <= c) || (a <= b && a >= c))
+	    mid = a;
+	else if ((b >= c && b <= a) || (b <= c && b >= a))
+	    mid = b;
+	else if ((c >= b && c <= a) || (c <= b && c >= a))
+	    mid = c;
+	else
+	    mid = 0;
 	return mid;
 }	
 

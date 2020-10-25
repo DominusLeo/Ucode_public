@@ -3,15 +3,12 @@
 t_phrase *choice(int pill) {
     char *res;
 
-    if (pill == MX_RED_PILL) {
+    if (pill == MX_RED_PILL)
         res = mx_strdup(MX_SUCCESS_PHRASE);
-    }
-    else if (pill == MX_BLUE_PILL) {
+    else if (pill == MX_BLUE_PILL)
         res = mx_strdup(MX_FAIL_PHRASE);
-    }
-    else {
+    else
         res = mx_strdup(MX_UNDEFINED_PHRASE);
-    }
     return res;
 }
 

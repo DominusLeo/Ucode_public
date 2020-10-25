@@ -19,5 +19,4 @@ int main(int argc, char *argv[]) {
         close(content);
     }
     exit(0);
-    return 0;
 }

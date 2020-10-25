@@ -9,7 +9,7 @@ void mx_printchar(char c);
 void mx_mult_table(int x, int y){
     if(x <= 0 || y <= 0 || x > 9 || y > 9)
         return;
-    if(x < y) {
+    if(x < y)
         for (int i = x; i <= y; i++) {
             for (int j = x; j <= y; j++) {
                 mx_printint(i * j);
@@ -17,8 +17,7 @@ void mx_mult_table(int x, int y){
             }
             mx_printchar('\n');
         }
-    }
-    if(x >= y) {
+    if(x >= y)
         for (int i = y; i <= x; i++) {
             for (int j = y; j <= x; j++) {
                 mx_printint(i * j);
@@ -26,7 +25,6 @@ void mx_mult_table(int x, int y){
             }
             mx_printchar('\n');
         }
-    }
 }
 
 int main(int argc, char *argv[]) {

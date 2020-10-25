@@ -5,7 +5,6 @@ int mx_strlen(const char *s);
 int mx_insertion_sort(char **arr, int size) {
     int count = 0;
     char *bilb;
-    int i = 0;
     int j = 0;
 
 //    for(i = 0; i < size - 1; i++) {
@@ -18,11 +17,11 @@ int mx_insertion_sort(char **arr, int size) {
 //            }
 //        }
 //    }
-    for(i = 1; i < size; i++) {//how it works?
+    for(int i = 1; i < size; i++) {//how it works?
         bilb = arr[i];
         j = i - 1;
-        while(j >= 0 && mx_strlen(arr[j]) > mx_strlen(bilb)) {
-            arr[j+1] = arr[j];
+        for (; j >= 0 && mx_strlen(arr[j]) > mx_strlen(bilb); ) {
+            arr[j + 1] = arr[j];
             j--;
             count++;
         }

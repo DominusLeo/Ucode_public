@@ -15,9 +15,8 @@ void mx_printint(int n) {
 	}
 	if (n > 9)
 		mx_printint(n / 10);
-		mx_printchar((n % 10) + 48);
+	mx_printchar((n % 10) + 48);
 }
-/*
  int main (void) {
 
  	mx_printint(3748943);
@@ -31,9 +30,8 @@ void mx_printint(int n) {
  	mx_printint(-2147483648);
  	mx_printchar('\n');
  	mx_printint(-2);
- }*/
+ }
 
-/*
 
  	int count_number =0, schet = n;
 
@@ -50,4 +48,3 @@ void mx_printint(int n) {
  	{
  		mx_printchar(arr_counts[i]);
  }
-*/

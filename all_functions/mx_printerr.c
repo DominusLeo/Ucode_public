@@ -1,11 +1,10 @@
 #include "header.h"
 
 void mx_printerr(const char *s) {
-   // for(int i = 0; i < mx_strlen(s); i++) {
    if(s == NULL)
        return;
    write(2, s, mx_strlen(s));
-   // }
+
 }
 
 /*

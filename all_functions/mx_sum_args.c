@@ -14,14 +14,14 @@ int mx_sum_args(int argc, char *argv[]) {
 
     if (argc == 1)
         return '\0';
-        for (int i = 1; i < argc; i++) {
-            valid_int[i] = mx_atoi(argv[i]);
-            sum += valid_int[i];
-        }
-        mx_printint(sum);
-        mx_printchar('\n');
-    return 0;
+    for (int i = 1; i < argc; i++) {
+        valid_int[i] = mx_atoi(argv[i]);
+        sum += valid_int[i];
     }
+    mx_printint(sum);
+    mx_printchar('\n');
+    return 0;
+}
 
 int main(int argc, char *argv[]) {
     mx_sum_args(argc, argv);

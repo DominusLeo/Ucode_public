@@ -6,7 +6,8 @@ int mx_count_words(const char *str, char delimiter) {
 		int count = 0;
         int temp = 0;
 
-        if(!str[i]) return 0;
+        if(!str[i])
+            return 0;
         for (i = 0; str[i] != '\0'; i++) {
             if (str[i] != delimiter) {
                 temp = 1;

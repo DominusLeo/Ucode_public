@@ -32,7 +32,7 @@ char **mx_strsplit(char const *s, char c) {
             j++;//рухаємося по строці
         }
     }
-    arr[j] = NULL;//why?
+    arr[j] = NULL;//NULL terminated end
     return arr;
 }
 

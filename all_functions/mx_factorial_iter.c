@@ -8,12 +8,10 @@ int mx_factorial_iter(int n) {
         return 0;
     if (n == 0)
         return fact;
-    else {
-        for (int i = 0; i <= n - 1; i++) {
+    else
+        for (int i = 0; i <= n - 1; i++)
             fact = fact * (i + 1);
-        }
         return fact;
-    }
 }
 
 //int main() {

@@ -5,11 +5,9 @@ int mx_popular_int(const int *arr, int size) {
 	int temp = 0;
 	
 	for(int i = 0; i < size; i++) {
-		for(int j = 0; j < size; j++) {
-			if(arr[i] == arr[j]) {
+		for(int j = 0; j < size; j++)
+			if(arr[i] == arr[j])
 				temp++;
-			}
-		}
 		if (temp > max_number) {
 			max_number = temp;
 			index_of_max = i;

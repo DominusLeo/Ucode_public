@@ -9,14 +9,10 @@ void mx_printint(int n);
 char *mx_strchr(const char *s, int c);
 
 void mx_print_pname(int argc, char *argv[]) {
-    int lengt = mx_strlen(argv[0]);
-    int i = 0;
-
     argc = argc * 1;
-    for(i = lengt; argv[0][i] != '/'; i--);
-    for(int j = i + 1; j < lengt; j++) {
+    for(int i = mx_strlen(argv[0]); argv[0][i] != '/'; i--);
+    for(int j = i + 1; j < lengt; j++)
         mx_printchar(argv[0][j]);
-    }
     mx_printchar('\n');
 }
 

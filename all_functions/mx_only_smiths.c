@@ -6,6 +6,7 @@ t_agent **mx_only_smiths(t_agent **agents, int strength) {
 
 int main(void) {
     t_agent **agent = NULL;
+
     char agent[0] = mx_create_agent("Smith", 150, 166);
     char agents[1] = mx_create_agent("Brown", 147, 57);
     char agents[2] = mx_create_agent("Smith", 151, 65);

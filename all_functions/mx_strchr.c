@@ -2,14 +2,8 @@
 #include <string.h>
 
 char *mx_strchr(const char *s, int c) {
-int i = 0;
-    while (s[i] && s[i] != c)  
-    	i++;
-    if (c == s[i]) 
-    	return ((char *)s + i);
-    // else 
-   	return NULL;
-    // return (c == s[i]) ? ((char*)s + i) : (NULL);
+    for (int i = 0; s[i] && s[i] != c; i++);
+   	return (c == s[i]) ? ((char *) s + i) : (NULL);
 }
 
 // int main(void) {

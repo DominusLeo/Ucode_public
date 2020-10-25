@@ -29,5 +29,4 @@ int main(int argc, char *argv[]) {
     close(content);
     close(write_content);
     exit(0);
-    return 0;
 }

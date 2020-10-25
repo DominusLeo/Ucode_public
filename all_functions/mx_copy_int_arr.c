@@ -9,14 +9,8 @@ int *mx_copy_int_arr(const int *src, int size) {
     if(src == NULL || size < 0)
         return NULL;
     dst =  malloc(sizeof(int) * size);
-    for(int i = 0; i < size; i++) {
+    for(int i = 0; i < size; i++)
         dst[i] = src[i];
-    }
-    //
-//    for(int i = 0; i < size; i++) {
-//        printf("%d ", dst[i]);
-//    }
-    //
     return dst;
 }
 

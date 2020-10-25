@@ -2,10 +2,6 @@
 
 int mx_strcmp(const char * s1, const char * s2);
 int mx_strlen(const char *s);
-//static void mx_sort(char *arr, int i, int min) {
-//
-//}
-
 
 int mx_selection_sort(char **arr, int size) {//How it works?
     int swap = 0;

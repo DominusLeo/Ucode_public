@@ -20,24 +20,22 @@ char *mx_strtrim(const char *str) {
     if(str == NULL)
         return NULL;
     lengt = mx_strlen(str);
-    for(i = lengt - 1; mx_isspace(str[i]); i--) {
+    for(i = lengt - 1; mx_isspace(str[i]); i--)
         count_right++;
-    }
     i = 0;
-    while(mx_isspace(str[i])) {
-        str++;
-        count_left++;
-    }
+    for (; mx_isspace(str[i]); str++, count_left++);
     clear_name = mx_strnew(lengt - count_right - count_left);
     clear_name = mx_strncpy(clear_name, str, lengt - count_right - count_left);
     return clear_name;
 }
 
-//int main(void) {
-//    char *name = NULL;
-//    char *clear;
-//
-//    clear = mx_strtrim(name);
-//    printf("%s", clear);
-//    system("leaks -q a.out");
-//}
+/*
+int main(void) {
+    char *name = "\f   \t    \n";
+    char *clear;
+
+    clear = mx_strtrim(name);
+    printf("%s", clear);
+    system("leaks -q a.out");
+}
+*/

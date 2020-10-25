@@ -21,9 +21,8 @@ void mx_arr_rotate(int *arr, int size, int shift) {//HOW
     else if (shift >= 0) {
         shift = shift % size;
         shift = size - shift;
-        for (i = 0; i < shift; i++) {
+        for (i = 0; i < shift; i++)
             mx_shift(arr, size);
-        }
     }
 }
 

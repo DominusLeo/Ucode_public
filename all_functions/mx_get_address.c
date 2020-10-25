@@ -5,9 +5,8 @@ char *mx_get_address(void *p) {
     char *s = mx_strnew(mx_strlen(temp) + 2);
 
     s = mx_strcpy(s, "0x");
-    for(int i = 2; i < (mx_strlen(temp) + 2); i++) {
-        s[i] = temp[i-2];
-    }
+    for(int i = 2; i < (mx_strlen(temp) + 2); i++)
+        s[i] = temp[i - 2];
     free(temp);
     return s;
 }

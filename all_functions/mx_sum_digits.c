@@ -5,10 +5,8 @@ int mx_sum_digits(int num) {
 	
 	if (num < 0) 
 		num = -num;
-	while (num > 0) {
-		sum_dig += num % 10;
-		num /= 10;
-	}
+	for (; num > 0; num /= 10)
+        sum_dig += num % 10;
 	return sum_dig;
 }
 

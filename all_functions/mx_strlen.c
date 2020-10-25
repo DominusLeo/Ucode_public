@@ -2,9 +2,8 @@
 
 int mx_strlen(const char *s) {
     int lengt = 0;
-    while(s[lengt]) {
-        lengt++;
-    }
+
+    while(s[lengt++]);
     return lengt;
 }
 
